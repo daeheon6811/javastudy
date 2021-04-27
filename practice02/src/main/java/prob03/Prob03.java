@@ -11,7 +11,10 @@ public class Prob03 {
 	}
 
 	public static void replaceSpace(char[] c) {
-
+		for(int i = 0 ; i < c.length; i++) {
+			if(c[i]== ' ')
+			 c[i] = 'A';
+		}
 	}
 
 
@@ -23,9 +26,10 @@ public class Prob03 {
 
 		Scanner scanner = new Scanner(System.in);
 
-		// 공백 문자 바꾸기
+		// 공백 문자 바꾸기  // A 로 바꿨습니다!
 		replaceSpace(c);
 
+		System.out.println();
 		// 수정된 배열 원소 출력
 		printCharArray(c);
 	}
