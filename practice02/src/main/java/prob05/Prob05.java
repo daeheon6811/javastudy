@@ -16,15 +16,16 @@ public class Prob05 {
 		
 		while (true) {
 
-		
+			
 			/* 게임 작성 */
 			value = scanner.nextInt();
 			if (correctNumber == value) {
 				System.out.println("정답!" + value);
+				
 				// 새 게임 여부 확인하기
 				System.out.print("다시 하겠습니까(y/n)>>");
 				String answer = scanner.next();
-
+				correctNumber = random.nextInt(100) + 1;
 				if ("y".equals(answer) == false) {
 					break;
 				}
