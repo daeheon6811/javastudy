@@ -11,7 +11,7 @@ public class Prob03 {
 	}
 
 	public static void replaceSpace(char[] c) {
-		for(int i = 0 ; i < c.length; i++) {
+		for(int i = 0 ; i < c.length; i++) {555
 			if(c[i]== ' ')
 			 c[i] = 'A';
 		}
