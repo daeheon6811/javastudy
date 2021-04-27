@@ -8,6 +8,8 @@ public class Prob1 {
 		
 		int number = scanner.nextInt();
 		
+		if(number % 3 == 0)
+			System.out.println("3의 배수입니다");
 
 		
 		

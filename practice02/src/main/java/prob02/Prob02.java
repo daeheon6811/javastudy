@@ -23,7 +23,7 @@ public class Prob02 {
 			value = scanner.nextInt();
 		    intArray[i] = i;
 		}
-		
+	
 		
 		/* 배열에 저장된 정수 값 더하기 */
 		for(int i = 0 ; i < intArray.length; i++) {
@@ -32,7 +32,7 @@ public class Prob02 {
 		
 		/* 출력 */
 		
-		System.out.println((int)sum);
+		System.out.println(sum);
 		/* 자원정리 */
 		scanner.close();
 	}

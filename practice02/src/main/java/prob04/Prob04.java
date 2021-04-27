@@ -11,15 +11,10 @@ public class Prob04 {
 	
 	public static char[] reverse(String str) {
 		
-		char[] reverse = null;
-		
-		for(int i = 0 ; i < 10; i++)
-		{
-			System.out.println(str.charAt(i));
-			reverse[i] = str.charAt(i);
-			
-		}
-		/* 코드를 완성합니다 */
+		StringBuffer sb = new StringBuffer(str);
+		sb.reverse();
+		str= sb.toString();
+		char[] reverse = str.toCharArray();
 		return reverse;
 	}
 
