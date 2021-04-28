@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Prob05 {
 
 	public static void main(String[] args) {
-		int temp = 0;
+		int temp = 100;
 		int value = 0;
 		Scanner scanner = new Scanner(System.in);
 		// 정답 램덤하게 만들기
@@ -32,9 +32,10 @@ public class Prob05 {
 			} else {
 
 				if (value < correctNumber) {
-					System.out.println("땡! " + " " + value + "~" + "100 ");
-				} else {
-					System.out.println("땡! " + " " + correctNumber + "~" + value);
+					System.out.println("땡! " + " " + value + "~" + temp);
+					temp=value;
+				} else if(value > correctNumber){
+					System.out.println("땡! " + " " + temp + "~" + value);
 				}
 			}
 
