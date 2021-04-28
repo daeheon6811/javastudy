@@ -18,3 +18,7 @@ public class GoodsApp {
 		scanner.close();
 	}
 }
+class Goods 
+{
+	
+}

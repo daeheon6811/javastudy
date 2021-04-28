@@ -12,17 +12,16 @@ public class Prob4 {
 		System.out.print("문자열을 입력하세요 : ");
 		String text = scanner.nextLine();
 		int count = 0;
-		char temp[]= null;
-		
+		char temp[] = null;
+
 		for (int i = 0; i < text.length(); i++) {
-			
-			if(text.charAt(i) == ' ')
-				count ++;
-			
+
+			if (text.charAt(i) == ' ')
+				count++;
+
 			for (int j = 0; j < i + count; j++) {
-				
-	    	
-					System.out.print(text.charAt(j));
+
+				System.out.print(text.charAt(j));
 
 			}
 			System.out.println();
