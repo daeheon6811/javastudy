@@ -11,7 +11,10 @@ public class GoodsApp {
 		Goods[] goods = new Goods[COUNT_GOODS];
 
 		// 상품 입력
-		
+		for(int i = 0; i < goods.length; i++) {
+			int title = scanner.nextInt();
+			
+		}
 		
 		// 상품 출
 		

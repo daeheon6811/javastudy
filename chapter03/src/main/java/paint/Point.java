@@ -26,8 +26,10 @@ public class Point {
 		this.y = y;
 	}
 	public  void show() {
-		System.out.println(x+","+y);
+		System.out.println(x+","+y + "Point show()");
 	}
-
+	public  void show(Boolean visible) {
+		System.out.println(x+","+y + " ");
+	}
 
 }

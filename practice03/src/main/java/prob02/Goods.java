@@ -5,6 +5,7 @@ public class Goods {
 	private int name;
 	private int price;
 	private int count;
+	
 	public int getName() {
 		return name;
 	}
