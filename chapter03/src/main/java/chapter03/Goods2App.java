@@ -14,6 +14,11 @@ public class Goods2App {
 		System.out.println(goods.calculateDiscountPrice(0.5));
 		goods.setPrice(-1);
 		goods.showInfo();
+		
+		Goods2 goods2 = new Goods2("cannon",1,1,1);
+		
+		goods2.showInfo();
+		
 	
 	}
 

@@ -10,9 +10,10 @@ public class PaintApp {
 		
 	
 	
+		
+	
+	
 	}
-	public static void show() {
-		System.out.println("점[10,20]에 점을 그렸습니다");
-	}
+
 
 }
