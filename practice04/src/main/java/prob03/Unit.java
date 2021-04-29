@@ -4,6 +4,7 @@ public class Unit {
 	
 	
 	public void attack() {
+		
 	}
 		
 	 void move(int x, int y) {

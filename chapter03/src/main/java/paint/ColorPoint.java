@@ -4,6 +4,13 @@ public class ColorPoint extends Point{
 	
 	private String color;
 
+	
+	public ColorPoint(int x , int y , String color) {
+		super(x,y);
+		this.color = color;
+	}
+	
+	
 	public String getColor() {
 		return color;
 	}
@@ -16,7 +23,7 @@ public class ColorPoint extends Point{
 
 	@Override
 	public void show() {
-		System.out.println("" +color + "출력 ColorPoint show() ");
+		System.out.println( color + "출력 ColorPoint show() ");
 	}
 
 	@Override
