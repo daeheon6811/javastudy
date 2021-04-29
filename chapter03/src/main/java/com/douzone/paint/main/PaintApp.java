@@ -1,6 +1,14 @@
-package paint;
+package com.douzone.paint.main;
 
-import java.awt.geom.Point2D;
+
+
+import com.douzone.paint.i.Drawable;
+import com.douzone.paint.point.Point;
+import com.douzone.paint.shape.Circle;
+import com.douzone.paint.shape.Rect;
+import com.douzone.paint.shape.Shape;
+import com.douzone.paint.shape.Triangle;
+import com.douzone.paint.text.GraphicText;
 
 public class PaintApp {
 
@@ -29,6 +37,27 @@ public class PaintApp {
 		
 		Drawable drawable;
 		draw(new GraphicText("HELLO~"));
+		
+		
+		System.out.println(circle instanceof Object);
+		System.out.println(circle instanceof Shape);
+	
+		
+		// class hierachy 상위와 하위만 instanceof 연산자를 사용할 수 없다.
+		// System.out.println(circle instanceof Rect);
+		Shape s = new Circle();
+		System.out.println(s instanceof Object);
+		System.out.println(s instanceof Shape);
+		System.out.println(s instanceof Rect);
+		System.out.println(s instanceof Circle);
+	
+		// interface는 hierachy와 상관없이 
+		// instanceof 연사자를 사용 할 수 없디.
+		System.out.println(s instanceof Drawable);
+		System.out.println(s instanceof Runnable);
+		
+	
+		
         //drawShape(triangle);
 		// drawShape(rect);
 		// drawShape(circle);
