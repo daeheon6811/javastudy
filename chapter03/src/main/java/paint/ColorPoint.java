@@ -22,7 +22,7 @@ public class ColorPoint extends Point{
 	
 
 	@Override
-	public void show() {
+	public void draw() {
 		System.out.println( color + "출력 ColorPoint show() ");
 	}
 
