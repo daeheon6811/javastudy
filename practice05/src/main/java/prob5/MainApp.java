@@ -25,7 +25,7 @@ public class MainApp {
 
 			System.out.println(stack.pop());
 			System.out.println(stack.pop());
-			throw new MyStackException("POP ERROR 초과");
+
 		} catch ( MyStackException ex) {
 
 

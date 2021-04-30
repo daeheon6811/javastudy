@@ -45,10 +45,10 @@ public class MyStack {
 	}
 
 	// 스택의 최상위(마지막) 데이터 추출 후 삭제
-	public String pop() {
+	public String pop() throws MyStackException {
 		if (isEmpty()) {
-
-			return "";
+			throw new MyStackException("POP ERROR 초과");
+			
 		} else {
 
 			return data[top--];

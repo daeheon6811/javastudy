@@ -37,6 +37,6 @@ public class RectTriangle extends Shape  {
 	@Override
 	protected double getPerimeter() {
 		// TODO Auto-generated method stub
-		return (width + height) + Math.pow(width, height);
+		return (width + height) + Math.sqrt(width) + Math.sqrt(height);
 	}
 }
