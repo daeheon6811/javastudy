@@ -11,8 +11,6 @@ public class GugudanApp {
 
 		int k = 1;
 		int answer = 0;
-		int leftvalue = (int) (Math.random() * SIZE + 1);
-		int rightvalue = (int) (Math.random() * SIZE + 1);
 		int result = leftvalue * rightvalue;
 
 		Set<Gugudan> set = new HashSet<Gugudan>();
@@ -24,26 +22,14 @@ public class GugudanApp {
 			}
 		}
 
-		System.out.println(leftvalue + "X" + rightvalue + " == ? ");
+	
 		Iterator<Gugudan> it = set.iterator(); // Iterator(반복자) 생성
 		int answerindex = (int) (Math.random() * SIZE + 1); // 결과 값을 9개 위치에서 저장
 		System.out.println(answerindex);
 
 		while (it.hasNext()) {
 
-			if (k != answerindex) {
-				System.out.print(it.next() + " ");
-			} else {
-				System.out.print(result + " ");
-			}
-
-			if (k % 3 == 0) {
-				System.out.println(" ");
-			}
-
-			if (k == SIZE) {
-				break;
-			}
+			
 			k++;
 		}
 
@@ -51,7 +37,7 @@ public class GugudanApp {
 		
 		Scanner scanner = new Scanner(System.in);
 		answer = scanner.nextInt();
-		
+	    scanner.nextLine();
 		if(answer == result) {
 			System.out.println("정답!");
 		}
