@@ -1,21 +1,27 @@
 package prob01;
 
-public class Printer {
+public class Printer<T> {
 
-	public void println(int i) {
-		System.out.println(i);
-
+	public <T> void println(T t) {
+		System.out.println(t);
 	}
+	
 
-	public void println(double i) {
-		System.out.println(i);
-	}
 
-	public void println(String i) {
-		System.out.println(i);
+	public <T> void println(T... ts) {
+		for(T t : ts) {
+			System.out.print(t);
+			System.out.print(" ");
+		}
+		System.out.print("\n");
 	}
-	public void println(Boolean i) {
-		System.out.println(i);
+	
+	public int sum(Integer... nums) {
+		Integer sum = 0;
+		for(Integer i : nums) {
+			sum += i;
+		}
+		return sum;
 	}
 
 }
