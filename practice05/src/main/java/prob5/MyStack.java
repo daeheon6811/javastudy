@@ -1,6 +1,6 @@
 package prob5;
 
-public class MyStack {
+public class MyStack<T> {
 
 	private String[] data;
 	private int top = -1;
