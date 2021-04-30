@@ -1,7 +1,9 @@
-package chapter04;
+package collection;
 
 import java.util.HashSet;
 import java.util.Set;
+
+import chapter04.Rect;
 
 public class HashSelTest {
 

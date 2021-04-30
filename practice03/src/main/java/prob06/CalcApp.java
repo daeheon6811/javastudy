@@ -25,50 +25,53 @@ public class CalcApp {
 			
 			int lValue = Integer.parseInt( tokens[ 0 ] );
 			int rValue = Integer.parseInt( tokens[ 2 ] );
-			
+			Calc arith = null;
 			switch( tokens[ 1 ] ) {
 				case "+" : {
-					Calc add = new Add();
-					add.setValue( lValue, rValue );
-					int result = add.calculate();
-					System.out.println( ">> " + result );
+					 arith = new Add();
+
 					
 					break;
 				}
 				case "-" : {
-					Calc sub = new Sub();
-					sub.setValue( lValue, rValue );
-					int result = sub.calculate();
-					System.out.println( ">> " + result );
-					
+					arith = new Sub();
+
 					break;
 				}
 				case "*" : {
-					Calc mul = new Mul();
-					mul.setValue( lValue, rValue );
-					int result = mul.calculate();
-					System.out.println( ">> " + result );
-					
+					arith = new Mul();
+	
 					break;					
 				}
 				case "/" : {
-					Calc div = new Div();
-					div.setValue( lValue, rValue );
-					int result = div.calculate();
-					System.out.println( ">> " + result );
+					arith = new Div();
+		
 					
 					break;
 				}
-				default :  {
-					System.out.println( ">> 알 수 없는 연산입니다.");
-				}
 			}
-		}
+				
+				if(arith == null) {
+					System.out.println( ">> 알 수 없는 연산입니다.");
+					continue;
+				}
+				
+				
+				arith.setValue( lValue, rValue );
+				int result = arith.calculate();
+				System.out.println( ">> " + result );
+				
+				
+				
+				
+			}
+		
 		
 		scanner.close();
+	}
 
 	}
 	
 	
 
-}
+
