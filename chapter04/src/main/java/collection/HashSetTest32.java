@@ -16,8 +16,7 @@ public class HashSetTest32 {
 		for(Gugudan g : s) {
 			System.out.println(g);
 		}
-		
-		
+				
 	}
 
 }
