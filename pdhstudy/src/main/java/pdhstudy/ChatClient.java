@@ -9,7 +9,7 @@ import MsgPacker.MessageProtocol;
 public class ChatClient {
 	  public void startClient() throws IOException, InterruptedException {
 		  
-	        InetSocketAddress hostAddress = new InetSocketAddress("localhost", 31203);
+	/*        InetSocketAddress hostAddress = new InetSocketAddress("localhost", 31203);
 	        SocketChannel client = SocketChannel.open(hostAddress);
 	 
 	        System.out.println("Client Started!");
@@ -29,5 +29,5 @@ public class ChatClient {
 	    	
 	    	ChatClient client = new ChatClient();
 	    	client.startClient();
-	    }
+	    }*/
 }

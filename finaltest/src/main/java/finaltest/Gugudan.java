@@ -5,11 +5,13 @@ public class Gugudan {
 	private int left;
 	private int right;
 
-	public Gugudan(int left, int right) {
+	
 
-		this.left = left;
-		this.right = right;
+	public Gugudan(int i, int j) {
+		this.left = i;
+		this.right= j;
 	}
+
 
 	@Override
 	public int hashCode() {

@@ -1,21 +1,8 @@
 package pdhstudy;
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.net.Socket;
-import java.net.SocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.nio.channels.ServerSocketChannel;
-import java.nio.channels.SocketChannel;
-import java.util.HashMap;
-import java.util.Iterator;
 
-import MsgPacker.MessagePacker;
-import MsgPacker.MessageProtocol;
 public class ChatServer implements Runnable {
 
-	private Selector selector;private HashMap<SocketChannel,String>dataMapper;
+	/*private Selector selector;private HashMap<SocketChannel,String>dataMapper;
 	private InetSocketAddress socketAddress;
 	private MessagePacker msg; // 여기서 MessagePacker를 써보자
 
@@ -152,7 +139,6 @@ public class ChatServer implements Runnable {
 			System.out.println("WHISPHER");
 			break;
 		}
-		}
-
-	}
+}
+	}*/
 }
