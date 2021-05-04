@@ -33,6 +33,8 @@ public class GugudanApp {
 			if (lefttemp * righttemp != result) {
 				set.add(new Gugudan(lefttemp, righttemp));
 			}
+			
+			
 			if (set.size() == 8) {
 				break;
 			}
