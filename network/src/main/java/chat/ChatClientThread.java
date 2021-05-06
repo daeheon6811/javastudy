@@ -3,6 +3,7 @@ package chat;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.net.Socket;
+import java.net.SocketException;
 
 public class ChatClientThread extends Thread {
 
@@ -23,8 +24,12 @@ public class ChatClientThread extends Thread {
 			while ((line = br.readLine()) != null) {
 				System.out.println(line);
 			}
-		} catch (IOException e) {
-			System.out.println("시스템을 종료합니다.");
+		} 
+		catch (SocketException e) {
+			System.out.println("SE 에러.");
+		}
+		catch (IOException e) {
+			System.out.println("IO 에러.");
 		} finally {
 			try {
 				if (socket != null)
@@ -32,8 +37,8 @@ public class ChatClientThread extends Thread {
 				if (br != null)
 					br.close();
 
-			} catch (Exception e2) {
-				e2.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
 			}
 		}
 	}
