@@ -8,7 +8,7 @@ import java.net.Socket;
 
 public class ChatServer {
 	
-	public static final int PORT = 8002;
+	public static final int PORT = 8005;
 
 	public static void main(String[] args) throws IOException {
 		

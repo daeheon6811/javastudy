@@ -9,10 +9,8 @@ public class ChatClientThread extends Thread {
 
 	private Socket socket = null;
 	private BufferedReader br;
-	private String nickname;
 
-	public ChatClientThread(String nickname , Socket socket, BufferedReader br) {
-		this.nickname = nickname;
+	public ChatClientThread(Socket socket, BufferedReader br) {
 		this.socket = socket;
 		this.br = br;
 	}

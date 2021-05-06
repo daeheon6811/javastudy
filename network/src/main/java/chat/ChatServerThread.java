@@ -51,7 +51,7 @@ public class ChatServerThread extends Thread {
 					doMessage(tokens[1] + ":" + tokens[2]);
 
 				} else if ("quit".equals(tokens[0])) {
-					doQuit(pw);
+					doQuit(tokens[1], pw );
 				} else {
 					log("이유 알수없음");
 				}
@@ -70,7 +70,7 @@ public class ChatServerThread extends Thread {
 
 	}
 
-	private void doQuit(Writer writer) {
+	private void doQuit(String nickname, Writer writer) {
 
 		String data = nickname + "님이 나가셨습니다.";
 		broadcast(data);

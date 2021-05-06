@@ -37,18 +37,29 @@ public class ChatClient {
 			// 5. join 프로토콜
 			System.out.print("닉네임>>");
 			String nickname = scanner.nextLine();
+		
+			
 			pw.println("join:" + nickname);
-			pw.flush();
+			pw.flush();	
+			
 			String echo = br.readLine();
-			ChatClientThread chatClientThread =  new ChatClientThread(nickname,socket,br);
+			String[] tokens = echo.split(":");
+			if ("join".equals(tokens[0])) {
+				System.out.println(tokens[1]);
+			}
+		
+			
+			ChatClientThread chatClientThread =  new ChatClientThread(socket,br);
 			chatClientThread.start();
 
 			while (true) {
+			
 
+				
 				System.out.print(">>");
 				String message = scanner.nextLine();
 				if ("quit".equals(message) == true) {
-					pw.println("quit:" + "님이 나가셨습니다.");
+					pw.println("quit:" + nickname);
 					pw.flush();
 					break;
 				} else {
