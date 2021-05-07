@@ -11,7 +11,7 @@ import java.net.SocketException;
 import java.util.Scanner;
 
 public class ChatClient {
-	private static final String SERVER_IP = "127.0.0.1";
+	private static final String SERVER_IP = "192.168.80.19";
 	private static final int SERVER_PORT = ChatServer.PORT;
 
 	public static void main(String[] args) {
@@ -53,10 +53,8 @@ public class ChatClient {
 			chatClientThread.start();
 
 			while (true) {
-			
 
-				
-				System.out.print(">>");
+				System.out.print("<<");
 				String message = scanner.nextLine();
 				if ("quit".equals(message) == true) {
 					pw.println("quit:" + nickname);
