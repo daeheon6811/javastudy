@@ -1,1 +1,1 @@
-## JAVA 공부!
+# JAVA Basic Programing
